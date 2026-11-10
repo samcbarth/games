@@ -15,7 +15,7 @@
       var ctx = K.ctx = cv.getContext('2d');
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       stage.style.aspectRatio = o.w + ' / ' + o.h;
-      stage.style.width = 'min(100%, ' + (o.maxW || o.w) + 'px, calc(78vh * ' + (o.w / o.h).toFixed(4) + '))';
+      stage.style.width = 'min(100%, ' + (o.maxW || o.w) + 'px, max(280px, calc(78vh * ' + (o.w / o.h).toFixed(4) + ')))';
       var hud = document.querySelector('.hud'); if (hud) hud.style.width = stage.style.width;
       var b = parseFloat(lsGet('lba.best.' + o.slug));
       K.best = isNaN(b) ? null : b;

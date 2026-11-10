@@ -88,8 +88,9 @@
       card(moving.fx + (PX - moving.fx) * k, moving.fy + (SY - moving.fy) * k, moving.card);
       if (k >= 1) moving = null;
     } else card(PX, SY, top());
-    ctx.fillStyle = '#d3f9d8'; ctx.fillText('Pile', PX + CW / 2, SY + CH + 18);
-    ctx.textAlign = 'left'; ctx.fillText('Cleared ' + cleared + ' / 35', 430, SY + 30);
+    ctx.fillStyle = '#d3f9d8'; ctx.font = 'bold 14px system-ui,sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+    ctx.fillText('Pile', PX + CW / 2, SY + CH + 18);
+    ctx.font = 'bold 16px system-ui,sans-serif'; ctx.textAlign = 'right'; ctx.fillText('Cleared ' + cleared + ' / 35', W - 16, SY + 30);
   }
   reset();
   Kit.t = { get cols() { return cols; }, get stock() { return stock; }, playable: playable, play: play, draw1: draw1 }; // test hook

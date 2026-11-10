@@ -237,7 +237,8 @@ def game_card(g):
 def build_game(g, games, stories):
     path = f"/games/{g['slug']}/"
     img = f"/assets/img/{g['slug']}.webp"
-    title = f"{g['name']}: free {g['genre'].lower()} game"
+    gl = g["genre"].lower()
+    title = f"{g['name']}: free {gl}" + ("" if gl.endswith(("game", "test")) else " game")
     how = "".join(f"<li>{e(s)}</li>" for s in g["how"])
     ctl = "".join(f"<tr><td>{e(a)}</td><td>{e(b)}</td></tr>" for a, b in g["controls"])
     tips = "".join(f"<li>{e(t)}</li>" for t in g["tips"])
