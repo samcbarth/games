@@ -24,7 +24,7 @@ SITE = {
     "author_url": "https://samcbarth.com",
     # Contact: a HubSpot form (portal 20693956) if a form id is set, otherwise a mailto link.
     "hubspot_portal": "20693956",
-    "hubspot_form_id": "",
+    "hubspot_form_id": "9f5020df-cf22-4018-bac9-4a89f544e208",
     "contact_email": "samcbarth@gmail.com",
 }
 # Sam's own games. Plain links only, nothing copied from those projects. Empty url = shown without a link.
