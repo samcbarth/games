@@ -38,7 +38,7 @@ for p in pages:
         if t.group(1) in titles:
             errors.append(f"{rel}: duplicate title with {titles[t.group(1)]}")
         titles[t.group(1)] = rel
-    for need in ['name="description"', 'rel="canonical"', "application/ld+json", "GTM-KMS4X55L", "og:image"]:
+    for need in ['name="description"', 'rel="canonical"', "application/ld+json", "G-VBSEWX39L4", "og:image"]:
         if need not in s:
             errors.append(f"{rel}: missing {need}")
     for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):

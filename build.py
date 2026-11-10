@@ -37,11 +37,12 @@ NETWORK = [
     ("realestate", "Real Estate"), ("tools", "Tools"), ("games", "Games"), ("streaming", "Streaming"),
     ("homerepair", "Home Repair"), ("deals", "Deals"), ("news", "News"),
 ]
-GTM = """<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+GTM = """<script async src="https://www.googletagmanager.com/gtag/js?id=G-VBSEWX39L4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  gtag('config', 'G-VBSEWX39L4');
 </script>"""
 # Extra on-screen controls under specific games
 EXTRA_CONTROLS = {
