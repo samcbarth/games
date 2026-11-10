@@ -101,6 +101,7 @@
       ctx.fillStyle = '#fff'; ctx.font = 'bold 17px system-ui,sans-serif'; ctx.fillText(b.l, b.x + b.w / 2, b.y + b.h / 2 + 1);
     });
   }
+  Kit.t = { get word() { return word; }, get time() { return time; } }; // test hook
   Kit.loop(function (dt) {
     if (Kit.state === 'playing') {
       time -= dt; msgT -= dt; shake = Math.max(0, shake - dt);

@@ -113,5 +113,6 @@
     if (drag) { var tp = tray[drag.i]; tp.s.forEach(function (p) { crate(drag.x - drag.ox + p[0] * C, drag.y - drag.oy + p[1] * C, C, tp.c, 0.9); }); }
   }
   reset();
+  Kit.t = { get tray() { return tray; }, fits: fits, place: place }; // test hook
   Kit.loop(function (dt) { draw(dt); });
 })();

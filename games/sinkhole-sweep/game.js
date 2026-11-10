@@ -108,5 +108,6 @@
     if (Kit.state === 'playing') { ctx.strokeStyle = '#ffd43b'; ctx.lineWidth = 3; ctx.strokeRect(cur.x * C + 2, cur.y * C + 2, C - 4, C - 4); ctx.lineWidth = 1; }
   }
   reset();
+  Kit.t = { get cells() { return cells; }, open: open, flag: flag }; // test hook
   Kit.loop(draw);
 })();

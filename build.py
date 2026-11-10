@@ -51,6 +51,7 @@ EXTRA_CONTROLS = {
     "sinkhole-sweep": '<div class="controls"><button type="button" data-act="flag">Flag mode: off</button></div>',
 }
 BUILD_TIME = datetime.now(timezone.utc)
+V = BUILD_TIME.strftime("%Y%m%d%H%M%S")  # cache-busting version for css/js
 e = html.escape
 
 
@@ -119,9 +120,9 @@ def page(path, title, desc, body, crumbs=None, lds=(), img="/assets/img/og-defau
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{e(SITE['news_brand'])}" href="/rss.xml">
 <link rel="alternate" type="application/feed+json" title="{e(SITE['news_brand'])}" href="/news/feed.json">
-<link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/config.js"></script>
-<script src="/assets/site.js"></script>
+<link rel="stylesheet" href="/assets/style.css?v={V}">
+<script src="/assets/config.js?v={V}"></script>
+<script src="/assets/site.js?v={V}"></script>
 {ld_html}
 </head>
 <body>
@@ -284,7 +285,7 @@ def build_game(g, games, stories):
 {ad('end')}
 </article>
 <aside><div class="sticky">{ad('sidebar')}</div></aside></div>"""
-    scripts = '<script src="/assets/kit.js"></script>\n<script src="/games/' + g["slug"] + '/game.js"></script>'
+    scripts = f'<script src="/assets/kit.js?v={V}"></script>\n<script src="/games/{g["slug"]}/game.js?v={V}"></script>'
     out(f"games/{g['slug']}/index.html", page(path, title, g["short"], body,
         crumbs=[("Home", "/"), ("Games", "/games/"), (g["name"], path)],
         lds=[vg, article_ld(f"How to play {g['name']}", g["short"], path, img), faq_ld], img=img, nav="games", scripts=scripts))

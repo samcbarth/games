@@ -53,5 +53,6 @@
     }
   }
   times = [];
+  Kit.t = { get phase() { return phase; }, hit: hit }; // test hook
   Kit.loop(function (dt, t) { draw(t); });
 })();

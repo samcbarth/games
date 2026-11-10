@@ -126,5 +126,6 @@
     pops = pops.filter(function (p) { return p.t > 0; });
   }
   reset();
+  Kit.t = { get grid() { return grid; }, get busy() { return busy; }, get moves() { return moves; }, trySwap: trySwap, swap: swap, matches: matches }; // test hook
   Kit.loop(function (dt) { draw(dt); });
 })();

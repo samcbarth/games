@@ -70,6 +70,7 @@
     ctx.beginPath(); ctx.arc(hd.x * C + C / 2 + dir.x * 4 + ex, hd.y * C + C / 2 + dir.y * 4 + ey, 2.5, 0, 7); ctx.fill();
   }
   reset();
+  Kit.t = { get food() { return food; }, get worm() { return worm; }, get dir() { return dir; }, turn: turn }; // test hook
   Kit.loop(function (dt, t) {
     if (Kit.state === 'playing' && !dead) {
       timer += dt; glow = Math.max(0, glow - dt * 2);

@@ -36,9 +36,9 @@
     },
     overlay: function (title, text, btn, extra) {
       var ov = document.getElementById('overlay');
-      ov.innerHTML = '<h2></h2>' + (extra || '') + '<p></p><button class="btn" type="button"></button>';
+      ov.innerHTML = '<h2></h2>' + (extra || '') + '<p class="ov-text"></p><button class="btn" type="button"></button>';
       ov.querySelector('h2').textContent = title;
-      ov.querySelector('p').textContent = text;
+      ov.querySelector('.ov-text').textContent = text;
       var b = ov.querySelector('button'); b.textContent = btn;
       b.addEventListener('click', function (e) { e.stopPropagation(); K.start(); });
       ov.hidden = false;
@@ -110,8 +110,11 @@
       K.cv.addEventListener('pointerdown', function () { setTimeout(function () { inp.focus({ preventScroll: true }); }, 0); });
       return inp;
     },
+    /* manual stepping, used by automated tests when the tab is hidden and rAF is paused */
+    fns: [], simT: 0,
+    step: function (dt, n) { for (var i = 0; i < (n || 1); i++) { K.simT += dt * 1000; K.fns.forEach(function (f) { f(dt, K.simT); }); } },
     loop: function (fn) {
-      var last = 0;
+      var last = 0; K.fns.push(fn);
       function f(t) {
         var dt = last ? Math.min((t - last) / 1000, 0.05) : 0; last = t;
         fn(dt, t); requestAnimationFrame(f);

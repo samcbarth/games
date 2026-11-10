@@ -74,5 +74,6 @@
     for (var i = 0; i < 3; i++) ctx.fillText(i < lives ? '♥' : '♡', W - 14 - i * 22, H - 20);
   }
   words = []; lives = 3;
+  Kit.t = { get words() { return words; }, inp: inp }; // test hook
   Kit.loop(function (dt) { if (Kit.state === 'playing') update(dt); draw(); });
 })();

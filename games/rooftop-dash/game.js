@@ -20,10 +20,10 @@
     var air = 2 * JUMP / GRAV;
     var gap = 40 + Math.random() * Math.min(0.55 * air * speed, 210);
     var top = Math.max(150, Math.min(300, last.top + (Math.random() * 110 - 55)));
-    if (top < last.top - 70) top = last.top - 70;
+    if (top < last.top - 50) top = last.top - 50;
     var r = { x: last.x + last.w + gap, w: 180 + Math.random() * 260, top: top };
     roofs.push(r);
-    if (r.w > 240 && Math.random() < 0.6) vents.push({ x: r.x + 80 + Math.random() * (r.w - 140), y: top, w: 22, h: 20 + Math.random() * 14 });
+    if (r.w > 300 && Math.random() < 0.5) vents.push({ x: r.x + 150 + Math.random() * (r.w - 240), y: top, w: 22, h: 20 + Math.random() * 14 });
   }
   function jump() {
     if (Kit.state !== 'playing') return;
@@ -87,5 +87,6 @@
     ctx.fillStyle = '#c92a2a'; ctx.fillRect(p.x - 6, p.y + 10, 8, 12);
   }
   reset();
+  Kit.t = { get p() { return p; }, get roofs() { return roofs; }, get vents() { return vents; }, jump: jump }; // test hook
   Kit.loop(function (dt, t) { if (Kit.state === 'playing' && alive) update(dt); draw(t); });
 })();

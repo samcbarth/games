@@ -113,5 +113,6 @@
     if (msgT > 0) { ctx.globalAlpha = Math.min(1, msgT); ctx.fillStyle = 'rgba(0,0,0,.6)'; Kit.rr(ctx, W / 2 - 120, TOP + 8, 240, 30, 8); ctx.fill(); ctx.fillStyle = '#fff'; ctx.fillText(msg, W / 2, TOP + 23); ctx.globalAlpha = 1; }
   }
   reset();
+  Kit.t = { act: act, startWave: startWave, get towers() { return towers; }, get gold() { return gold; }, get wave() { return wave; }, get lives() { return lives; } }; // test hook
   Kit.loop(function (dt) { if (Kit.state === 'playing') update(dt); draw(); });
 })();

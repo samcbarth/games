@@ -92,5 +92,6 @@
     ctx.textAlign = 'left'; ctx.fillText('Cleared ' + cleared + ' / 35', 430, SY + 30);
   }
   reset();
+  Kit.t = { get cols() { return cols; }, get stock() { return stock; }, playable: playable, play: play, draw1: draw1 }; // test hook
   Kit.loop(function (dt) { draw(dt); });
 })();
