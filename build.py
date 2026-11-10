@@ -221,6 +221,11 @@ def make_images(games, stories):
         p = f"assets/img/news-{s['slug']}.webp"
         if not os.path.exists(os.path.join(ROOT, p)):
             card(p, s["title"], SITE["news_brand"] + " | " + fmt_date(s["date"]), "#1c2541", "#ffd43b", "NEWS")
+    ico = Image.new("RGB", (64, 64), (217, 72, 15))
+    di = ImageDraw.Draw(ico)
+    di.ellipse([14, 26, 30, 42], fill=(255, 255, 255))
+    di.rounded_rectangle([36, 26, 52, 42], radius=3, fill=(255, 255, 255))
+    ico.save(os.path.join(ROOT, "favicon.ico"), sizes=[(32, 32), (64, 64)])
     out("assets/img/favicon.svg", '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">'
         '<stop offset="0" stop-color="#d9480f"/><stop offset="1" stop-color="#f59f00"/></linearGradient></defs>'
         '<rect width="64" height="64" rx="14" fill="url(#g)"/><circle cx="22" cy="34" r="8" fill="#fff"/>'
