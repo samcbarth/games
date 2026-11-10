@@ -116,10 +116,13 @@ def page(path, title, desc, body, crumbs=None, lds=(), img="/assets/img/og-defau
 <meta property="og:url" content="{canonical}">
 <meta property="og:image" content="{SITE['url']}{img}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#d9480f">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{e(SITE['news_brand'])}" href="/rss.xml">
 <link rel="alternate" type="application/feed+json" title="{e(SITE['news_brand'])}" href="/news/feed.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@900&family=Inter:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="/assets/style.css?v={V}">
 <script src="/assets/config.js?v={V}"></script>
 <script src="/assets/site.js?v={V}"></script>
@@ -129,14 +132,13 @@ def page(path, title, desc, body, crumbs=None, lds=(), img="/assets/img/og-defau
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap">
 <a class="brand" href="/"><span class="dot" aria-hidden="true"></span>{e(SITE['name'])}</a>
-<nav class="main" aria-label="Main">{navlink('/games/', 'Games', 'games')}{navlink('/news/', 'News', 'news')}{navlink('/about/', 'About', 'about')}
-<button class="theme-btn" type="button" aria-label="Toggle dark mode">Theme</button></nav>
-</div></header>
+<nav class="main" aria-label="Main">{navlink('/games/', 'Games', 'games')}{navlink('/news/', 'News', 'news')}{navlink('/about/', 'About', 'about')}{navlink('/contact/', 'Contact', 'contact')}</nav>
+</div><div class="grad-band" aria-hidden="true"></div></header>
 <main id="main"><div class="wrap">
 {crumb_html}
 {body}
 </div></main>
-<footer class="site"><div class="wrap">
+<footer class="site"><div class="grad-band" aria-hidden="true"></div><div class="wrap">
 <div class="foot-links"><a href="/games/">All games</a><a href="/news/">{e(SITE['news_brand'])}</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/rss.xml">RSS</a></div>
 <nav class="netbar" aria-label="samcbarth.com network"><strong>samcbarth.com network:</strong> {netbar}</nav>
 <p>&copy; {BUILD_TIME.year} {e(SITE['author'])}. All games on this site are original works made for {e(SITE['name'])}.</p>
@@ -145,6 +147,17 @@ def page(path, title, desc, body, crumbs=None, lds=(), img="/assets/img/og-defau
 </body>
 </html>
 """
+
+
+HS_FORM_CSS = ("body,.hs-form{font-family:Inter,Helvetica Neue,Arial,sans-serif;color:#fff}"
+               ".hs-form label,.hs-form legend,.hs-form .hs-richtext{color:#fff!important;font-weight:500}"
+               ".hs-form .hs-field-desc{color:rgba(255,255,255,.62)!important}"
+               ".hs-form .hs-form-required{color:#c9b8ff!important}"
+               ".hs-form .hs-input{background:#000!important;color:#fff!important;border:1px solid rgba(255,255,255,.28)!important;border-radius:4px!important}"
+               ".hs-form .hs-button{background:#9a00ff!important;border:0!important;color:#fff!important;border-radius:50px!important;min-height:52px;padding:0 28px!important;"
+               "font:700 14px/1 Inter,Arial,sans-serif!important;text-transform:uppercase;letter-spacing:.06em;cursor:pointer}"
+               ".hs-form .hs-error-msgs label,.hs-form .hs-error-msg{color:#ff8fa3!important}"
+               ".hs-form a{color:#c9b8ff!important}")
 
 
 def ad(slot, cls=""):
@@ -213,21 +226,21 @@ def make_images(games, stories):
         d.text((70, 540), SITE["domain"], font=font(30), fill=b)
         im.save(os.path.join(ROOT, path), "WEBP", quality=82)
 
-    card("assets/img/og-default.webp", "Free original browser games", SITE["name"], "#2b1d4a", "#ff8a4c", "GO")
-    card("assets/img/news.webp", SITE["news_brand"], "Gaming, indie and browser game news", "#1c2541", "#ffd43b", "NEWS")
+    card("assets/img/og-default.webp", "Free original browser games", SITE["name"], "#000000", "#9a00ff", "GO")
+    card("assets/img/news.webp", SITE["news_brand"], "Gaming, indie and browser game news", "#000000", "#9a00ff", "NEWS")
     for g in games:
         card(f"assets/img/{g['slug']}.webp", g["name"], g["genre"] + " | play free", g["color"][0], g["color"][1], g["glyph"])
     for s in stories:
         p = f"assets/img/news-{s['slug']}.webp"
         if not os.path.exists(os.path.join(ROOT, p)):
-            card(p, s["title"], SITE["news_brand"] + " | " + fmt_date(s["date"]), "#1c2541", "#ffd43b", "NEWS")
-    ico = Image.new("RGB", (64, 64), (217, 72, 15))
+            card(p, s["title"], SITE["news_brand"] + " | " + fmt_date(s["date"]), "#000000", "#9a00ff", "NEWS")
+    ico = Image.new("RGB", (64, 64), (154, 0, 255))
     di = ImageDraw.Draw(ico)
     di.ellipse([14, 26, 30, 42], fill=(255, 255, 255))
     di.rounded_rectangle([36, 26, 52, 42], radius=3, fill=(255, 255, 255))
     ico.save(os.path.join(ROOT, "favicon.ico"), sizes=[(32, 32), (64, 64)])
     out("assets/img/favicon.svg", '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">'
-        '<stop offset="0" stop-color="#d9480f"/><stop offset="1" stop-color="#f59f00"/></linearGradient></defs>'
+        '<stop offset="0" stop-color="#000000"/><stop offset="1" stop-color="#9a00ff"/></linearGradient></defs>'
         '<rect width="64" height="64" rx="14" fill="url(#g)"/><circle cx="22" cy="34" r="8" fill="#fff"/>'
         '<rect x="36" y="26" width="16" height="16" rx="3" fill="#fff"/></svg>')
 
@@ -357,8 +370,10 @@ def build_static(games, stories):
     # Home
     latest = "".join(f'<li><span class="meta">{fmt_date(s["date"])}</span><br><a class="title" href="/news/{s["slug"]}/">{e(s["title"])}</a></li>' for s in stories[:4])
     desc = "Play free original browser games: word puzzles, match-three, a runner, block puzzle, solitaire, tower defense and more. No download, works on phones."
-    body = f"""<h1>Free browser games you can finish on a lunch break</h1>
+    body = f"""<p class="eyebrow">Free original browser games</p>
+<h1>Free browser games you can finish on a lunch break</h1>
 <p class="lede answer">{e(SITE['name'])} is a collection of {len(games)} free, original games that run in your browser on desktop and mobile. No download, no account. Each round takes a few minutes and your best score is saved on your device.</p>
+<p class="cta-row"><a class="btn" href="/games/">Browse all games</a> <a class="btn ghost" href="/news/">Gaming news</a></p>
 <h2>Pick a game</h2>
 <div class="grid">{''.join(game_card(g) for g in games)}</div>
 {ad('intro')}
@@ -388,7 +403,7 @@ def build_static(games, stories):
         out(path.strip("/") + "/index.html", page(path, title, desc, f'<article class="prose"><h1>{e(title)}</h1>{inner}</article>',
             crumbs=[("Home", "/"), (title, path)], lds=[article_ld(title, desc, path, "/assets/img/og-default.webp")], nav=nav))
 
-    simple("/about/", "About Lunchbreak Arcade", "Who makes Lunchbreak Arcade, how the games are made and how the site is funded.", f"""
+    simple("/about/", "About Lunchbreak Arcade", "Who makes Lunchbreak Arcade, how the games are made and how the site is funded.", inner=f"""
 <p class="answer">{e(SITE['name'])} is a small collection of free, original browser games run by {e(SITE['author'])}. The games are short, work on phones and desktops, and need no download or account.</p>
 <h2>Who makes the games?</h2>
 <p>The site is owned and run by <a href="{SITE['author_url']}">{e(SITE['author'])}</a>. Every game here was written for this site in plain JavaScript and HTML canvas. Genres are familiar (word puzzles, match-three, solitaire, tower defense), but the names, art, rules details and levels are original.</p>
@@ -399,14 +414,16 @@ def build_static(games, stories):
 <h2>Part of a network</h2>
 <p>{e(SITE['name'])} is one of several sites on samcbarth.com, listed in the footer of every page.</p>
 <h2>How can I get in touch?</h2>
-<p>Use the <a href="/contact/">contact page</a> for bug reports, game ideas or corrections to a news story.</p>""", "about")
+<p>Use the <a href="/contact/">contact page</a> for bug reports, game ideas or corrections to a news story.</p>""", nav="about")
     if SITE["hubspot_form_id"]:
         form = (f'<div id="hs-form"></div><script src="https://js.hsforms.net/forms/embed/v2.js"></script><script>'
-                f'hbspt.forms.create({{region:"na1",portalId:"{SITE["hubspot_portal"]}",formId:"{SITE["hubspot_form_id"]}",target:"#hs-form"}});</script>')
+                f'hbspt.forms.create({{region:"na1",portalId:"{SITE["hubspot_portal"]}",formId:"{SITE["hubspot_form_id"]}",target:"#hs-form",'
+                f'onFormReady:function(f){{var el=f&&f.jquery?f[0]:f;var d=el&&el.ownerDocument;if(!d||!d.head)return;var s=d.createElement("style");s.textContent={json.dumps(HS_FORM_CSS)};d.head.appendChild(s);}}}});</script>')
     else:
         form = f'<p><a class="btn" href="mailto:{SITE["contact_email"]}?subject=Lunchbreak%20Arcade">Email {e(SITE["contact_email"])}</a></p>'
-    simple("/contact/", "Contact", "Contact Lunchbreak Arcade about bugs, game ideas, news corrections or advertising.", f"""
-<p class="answer">The fastest way to reach {e(SITE['name'])} is by email. Bug reports, game ideas and news corrections are all welcome.</p>
+    reach = "with the form below" if SITE["hubspot_form_id"] else "by email"
+    simple("/contact/", "Contact", "Contact Lunchbreak Arcade about bugs, game ideas, news corrections or advertising.", nav="contact", inner=f"""
+<p class="answer">The fastest way to reach {e(SITE['name'])} is {reach}. Bug reports, game ideas and news corrections are all welcome.</p>
 {form}
 <h2>What should a bug report include?</h2>
 <p>The game name, your device and browser, and what happened just before the problem. A screenshot helps.</p>
@@ -414,9 +431,9 @@ def build_static(games, stories):
 <p>Send the story link and the correction with a source. Confirmed errors are fixed and noted on the story.</p>""")
     simple("/privacy/", "Privacy Policy", "How Lunchbreak Arcade uses cookies, Google advertising, analytics and local storage.", f"""
 <p class="meta">Last updated {BUILD_TIME.strftime('%B %d, %Y')}</p>
-<p class="answer">{e(SITE['name'])} ({SITE['domain']}) does not ask you to create an account and does not collect your name or email unless you email us. It uses cookies and similar technologies for analytics and advertising, as described below.</p>
+<p class="answer">{e(SITE['name'])} ({SITE['domain']}) does not ask you to create an account and does not collect your name or email unless you contact us. It uses cookies and similar technologies for analytics and advertising, as described below.</p>
 <h2>What does the site store on my device?</h2>
-<p>Games save your best score and your light or dark theme choice in your browser's local storage. This stays on your device and is not sent to us.</p>
+<p>Games save your best score in your browser's local storage. This stays on your device and is not sent to us.</p>
 <h2>Analytics</h2>
 <p>We use Google Tag Manager and Google Analytics to understand which pages are visited and how the site performs. These tools set cookies and collect information such as pages viewed, approximate location, device and browser type. See <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from sites that use its services</a>.</p>
 <h2>Advertising and Google AdSense</h2>

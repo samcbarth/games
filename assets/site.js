@@ -1,17 +1,9 @@
-/* Theme toggle + ad slot rendering. Ads only render when SITE_CONFIG has ids. */
+/* Sticky nav state + ad slot rendering. Ads only render when SITE_CONFIG has ids. */
 (function () {
-  var root = document.documentElement;
-  function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
-  var saved = store('theme');
-  if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
   document.addEventListener('DOMContentLoaded', function () {
-    var btn = document.querySelector('.theme-btn');
-    if (btn) btn.addEventListener('click', function () {
-      var cur = root.getAttribute('data-theme') ||
-        (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      var next = cur === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next); store('theme', next);
-    });
+    var hdr = document.querySelector('header.site');
+    function onScroll() { if (hdr) hdr.classList.toggle('scrolled', window.scrollY > 8); }
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
     renderAds();
   });
   function renderAds() {
