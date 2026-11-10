@@ -21,7 +21,7 @@ The Claude preview entry is `games-site` (port 8823) in `.claude/launch.json`.
 | `games/<slug>/game.js` | Hand-written game code (canvas). Never generated. |
 | `assets/kit.js` | Shared game kit: canvas setup, Play overlay, HUD, best score (localStorage in try/catch), swipe and text input helpers |
 | `assets/config.js` | Ad ids (see below) |
-| `assets/site.js` | Theme toggle and ad slot rendering |
+| `assets/site.js` | Sticky nav scroll state and ad slot rendering |
 | `build.py` | Generates all HTML, `news/feed.json`, `rss.xml`, `sitemap.xml`, `robots.txt`, `llms.txt`, card images, `CNAME` |
 
 Generated files are committed because GitHub Pages serves the repo root as is.
