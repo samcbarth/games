@@ -1,0 +1,302 @@
+[
+  {
+    "slug": "tangleword",
+    "name": "Tangleword",
+    "genre": "Word puzzle",
+    "schema_genre": ["Puzzle", "Word game"],
+    "color": ["#6c4f73", "#ffd43b"],
+    "glyph": "AB",
+    "short": "Unscramble jumbled words against a 75 second clock. A free word puzzle game you can play in your browser on phone or desktop.",
+    "lede": "Tangleword is a quick word puzzle: the letters of a common English word are scrambled, and you rebuild it before the clock runs out. Each correct word adds points and a few seconds back.",
+    "how": [
+      "Press Play. A scrambled word appears as a row of letter tiles.",
+      "Tap tiles in order, or type the letters, to fill the answer slots above them.",
+      "When every slot is full the answer is checked. A correct word scores 10 points per letter plus a small bonus for time left, and adds 3 seconds.",
+      "Stuck? Shuffle the tiles, clear your answer, or skip the word for a 5 second penalty.",
+      "The round ends when the timer reaches zero."
+    ],
+    "controls": [["Type a letter", "Places the first matching tile"], ["Backspace", "Removes the last letter"], ["Space", "Shuffles the tiles"], ["Enter", "Submits the answer"], ["Tap", "Picks a tile, or returns a letter from the answer row"]],
+    "tips": [
+      "Look for common endings first: -ER, -ING, -ED, -LE and -OW show up often in the word list.",
+      "Shuffle early. A new letter order often makes the word jump out faster than staring at the same row.",
+      "Skipping costs 5 seconds, so it is worth it once you have spent more than about 8 seconds on a word.",
+      "Short words are worth fewer points but take less time, so a steady pace beats waiting for long ones."
+    ],
+    "faq": [
+      ["Is Tangleword free?", "Yes. It runs in your browser with no download, sign-up or payment."],
+      ["Can I play Tangleword on my phone?", "Yes. Tap the letter tiles to build each word, so you do not need the on-screen keyboard."],
+      ["What words are used?", "Everyday English words of 5 to 7 letters, such as animals, foods, places and household objects. There are no proper nouns or obscure dictionary words."],
+      ["Is my high score saved?", "Your best score is saved in your browser's local storage on this device. Clearing site data resets it."]
+    ]
+  },
+  {
+    "slug": "tide-pool-swap",
+    "name": "Tide Pool Swap",
+    "genre": "Match-three puzzle",
+    "schema_genre": ["Puzzle", "Casual"],
+    "color": ["#0b7285", "#f783ac"],
+    "glyph": "***",
+    "short": "Swap shells, pearls and starfish to line up three or more in this free match-three puzzle. 25 moves, chain reactions, no download.",
+    "lede": "Tide Pool Swap is a match-three puzzle set in a rock pool. Swap two neighbouring treasures to line up three or more of the same kind. You get 25 moves, called tides, to score as much as you can.",
+    "how": [
+      "Press Play to fill the pool with six kinds of treasure.",
+      "Swap two neighbouring pieces by dragging one onto the other, or tap one and then tap its neighbour.",
+      "A swap only counts if it makes a line of three or more matching pieces in a row or column.",
+      "Matched pieces are collected, everything above falls down, and new pieces drop in. New lines formed by falling pieces chain together for bonus points.",
+      "The game ends when your 25 tides are used up."
+    ],
+    "controls": [["Drag or tap", "Swap two neighbouring pieces"], ["Arrow keys", "Move the cursor"], ["Space or Enter", "Select the piece under the cursor"], ["Arrow key after selecting", "Swap in that direction"]],
+    "tips": [
+      "Work near the bottom of the board. Matches low down shift more pieces and make chains more likely.",
+      "Lines of four or five score a flat bonus on top of the normal points, so look for them before taking an easy three.",
+      "Chains multiply: the second wave of a cascade is worth double per piece, the third triple, and so on.",
+      "If no swaps are possible the pool reshuffles for free, so you never get stuck."
+    ],
+    "faq": [
+      ["How is Tide Pool Swap scored?", "Each collected piece is worth 10 points times the chain level, plus 20 points for every piece beyond three in a single line."],
+      ["What happens if there are no moves left?", "The board reshuffles automatically and you keep your remaining tides."],
+      ["Does it work on touch screens?", "Yes. Swipe a piece toward its neighbour or tap two neighbours one after the other."],
+      ["Is there a time limit?", "No. You have 25 moves and can take as long as you like on each one."]
+    ]
+  },
+  {
+    "slug": "rooftop-dash",
+    "name": "Rooftop Dash",
+    "genre": "Endless runner",
+    "schema_genre": ["Action", "Arcade"],
+    "color": ["#2b1d4a", "#f59f00"],
+    "glyph": ">>",
+    "short": "Run across city rooftops at sunset, jump the gaps and dodge vents in this free one-button endless runner for phone and desktop.",
+    "lede": "Rooftop Dash is a one-button endless runner. Your courier sprints across rooftops at dusk, and you decide when to jump. The run speeds up the longer you last, and your score is the distance covered in meters.",
+    "how": [
+      "Press Play and the courier starts running on their own.",
+      "Tap the game, click, or press Space or the Up arrow to jump.",
+      "Tap again while in the air for one extra jump. It resets when you land.",
+      "Jump over the gaps between buildings and the rooftop vents. Falling into a gap, hitting a taller wall, or clipping a vent ends the run.",
+      "The run gets faster over time. Your score is meters run."
+    ],
+    "controls": [["Space, Up arrow or W", "Jump (press again in the air for a second jump)"], ["Tap or click", "Jump"]],
+    "tips": [
+      "Save the second jump. Use one jump for most gaps and keep the extra one to correct a short hop.",
+      "Taller buildings ahead need an earlier jump. If the next roof is higher, jump a little sooner than you think.",
+      "Watch the far edge of the roof you are on rather than the runner, so you can time the takeoff.",
+      "Vents only sit on longer rooftops, so a long roof is a cue to look for one."
+    ],
+    "faq": [
+      ["How do you score in Rooftop Dash?", "Your score is the distance run in meters. It counts up continuously until the run ends."],
+      ["Is there a double jump?", "Yes. You can jump once more while in the air. The second jump is slightly weaker than the first."],
+      ["Does Rooftop Dash work on mobile?", "Yes. Tap anywhere on the game to jump. Landscape orientation gives a bigger view."],
+      ["Does it get harder?", "The speed rises steadily up to a cap, and gaps get wider as you go faster."]
+    ]
+  },
+  {
+    "slug": "crate-stack",
+    "name": "Crate Stack",
+    "genre": "Block puzzle",
+    "schema_genre": ["Puzzle", "Strategy"],
+    "color": ["#2f3a3f", "#e8a35c"],
+    "glyph": "[#]",
+    "short": "Drag crate shapes onto an 8 by 8 warehouse floor and clear full rows and columns. A free block puzzle with no timer.",
+    "lede": "Crate Stack is a calm block puzzle. You get three crate shapes at a time and place them on an 8 by 8 warehouse floor. Fill a whole row or column and it ships out, freeing space. The game ends when none of your shapes fit.",
+    "how": [
+      "Press Play. Three crate shapes appear in the tray below the floor.",
+      "Drag a shape onto the floor. A green outline means it fits; red means it does not.",
+      "Fill a complete row or column to clear it. Clearing several lines at once scores extra.",
+      "When all three shapes are placed, three new ones arrive.",
+      "If none of the shapes in the tray can fit anywhere, the game is over."
+    ],
+    "controls": [["Drag", "Move a shape from the tray to the floor"], ["1, 2, 3", "Pick a shape from the tray"], ["Arrow keys", "Move the shape on the floor"], ["Enter or Space", "Drop the shape"]],
+    "tips": [
+      "Keep a 3 by 3 space open as long as you can. The big square crate needs it and can end a game on its own.",
+      "Fill edges and corners first so the middle stays flexible.",
+      "Clearing a row and a column with one piece scores 40 points instead of 20, so set up crossings.",
+      "Shapes that cannot fit anywhere are dimmed in the tray, which warns you before the game ends."
+    ],
+    "faq": [
+      ["How does scoring work in Crate Stack?", "You earn 1 point per crate square placed. Clearing lines adds 10 points times the number of lines squared, so 1 line is 10, 2 lines are 40 and 3 lines are 90."],
+      ["Can I rotate the shapes?", "No. Shapes are placed as shown, which is part of the challenge."],
+      ["Is there a time limit?", "No. Take as long as you need for each placement."],
+      ["Can I play with a keyboard?", "Yes. Press 1, 2 or 3 to pick a shape, move it with the arrow keys and press Enter to drop it."]
+    ]
+  },
+  {
+    "slug": "glowworm",
+    "name": "Glowworm",
+    "genre": "Snake-style arcade",
+    "schema_genre": ["Arcade", "Casual"],
+    "color": ["#141225", "#b2f2bb"],
+    "glyph": "~o",
+    "short": "Steer a glowing worm through a night garden, eat dewdrops and grow longer without biting your own tail. Free arcade game.",
+    "lede": "Glowworm is a snake-style arcade game. You guide a glowing worm around a night garden to eat dewdrops. Each drop makes it longer and a little faster. Hit a wall or your own tail and the round is over.",
+    "how": [
+      "Press Play. The worm starts moving to the right.",
+      "Steer with the arrow keys, WASD, a swipe on the game, or the on-screen buttons.",
+      "Eat blue dewdrops for 10 points. Rare golden drops are worth 50 points and add an extra segment.",
+      "The worm speeds up slightly with every drop.",
+      "Running into the edge of the garden or into your own body ends the round."
+    ],
+    "controls": [["Arrow keys or WASD", "Turn"], ["Swipe", "Turn in the swipe direction"], ["On-screen arrows", "Turn"]],
+    "tips": [
+      "Move in wide loops around the edge early on, which leaves the middle open as you grow.",
+      "Turns are queued, so you can tap two directions quickly to make a tight U-turn.",
+      "Do not chase every golden drop. A long detour near your own tail is the most common way to lose.",
+      "When the worm is long, follow your tail around. The space it leaves behind is always safe."
+    ],
+    "faq": [
+      ["How is Glowworm different from classic snake games?", "The rules are in the same family, with its own look: a glowing worm, a night garden, golden bonus drops and gradual speed-up."],
+      ["Can I play Glowworm on a phone?", "Yes. Swipe on the game or use the arrow buttons below it."],
+      ["Why can't I reverse direction?", "Turning straight back would run the worm into itself, so a reverse input is ignored."],
+      ["Where is my best score kept?", "In your browser's local storage on this device."]
+    ]
+  },
+  {
+    "slug": "sinkhole-sweep",
+    "name": "Sinkhole Sweep",
+    "genre": "Logic puzzle",
+    "schema_genre": ["Puzzle", "Strategy"],
+    "color": ["#69a84f", "#e3c79d"],
+    "glyph": "3?",
+    "short": "Survey a 9 by 9 meadow and mark the 10 hidden sinkholes using number clues. A free logic puzzle in the minesweeper family.",
+    "lede": "Sinkhole Sweep is a logic puzzle. Ten sinkholes hide under a 9 by 9 meadow. Each patch you survey shows how many sinkholes touch it, and you use those numbers to work out where it is safe to step next.",
+    "how": [
+      "Press Play, then tap any patch to start. The first tap is always safe and usually opens an area.",
+      "Each number tells you how many of the 8 surrounding patches hold a sinkhole.",
+      "Mark a patch you know is a sinkhole with a flag: long-press it, right-click it, or turn on Flag mode.",
+      "Survey every safe patch to win. A fast finish adds a time bonus.",
+      "Survey a sinkhole and the round ends."
+    ],
+    "controls": [["Tap or click", "Survey a patch"], ["Long-press or right-click", "Place or remove a flag"], ["Flag mode button", "Makes taps place flags"], ["Arrow keys", "Move the cursor"], ["Space or Enter", "Survey"], ["F", "Flag"]],
+    "tips": [
+      "A 1 touching only one hidden patch means that patch is a sinkhole. Flag it.",
+      "If a number already has that many flags around it, every other hidden neighbour is safe.",
+      "Look for the 1-2-1 pattern along an edge: the patches next to the 1s are sinkholes, the one next to the 2 is safe.",
+      "Corners give the least information. Work from the open areas outward."
+    ],
+    "faq": [
+      ["How is Sinkhole Sweep scored?", "Each safe patch you survey is worth 10 points. Clearing the whole meadow adds a time bonus of up to 500 points."],
+      ["Is the first move always safe?", "Yes. Sinkholes are placed after your first tap, never on or next to that patch."],
+      ["How do I flag on a phone?", "Long-press a patch, or tap the Flag mode button below the game so taps place flags."],
+      ["Is every board solvable without guessing?", "Most are, but like other games in this family some boards need a guess near the end."]
+    ]
+  },
+  {
+    "slug": "keystorm",
+    "name": "Keystorm",
+    "genre": "Typing game",
+    "schema_genre": ["Educational", "Arcade"],
+    "color": ["#1c2541", "#ffd43b"],
+    "glyph": "abc",
+    "short": "Type falling words before they reach the town. A free typing game that gets faster as you go, for keyboards and phones.",
+    "lede": "Keystorm is a typing game. Words drift down toward a small town, and you type each one to clear it before it lands. The storm speeds up as you go, and three missed words end the round.",
+    "how": [
+      "Press Play. Words begin falling from the top of the screen.",
+      "Type any word you see. Letters you have typed light up on every word that starts with them.",
+      "Finish a word exactly and it disappears, scoring 10 points per letter.",
+      "Press Space or Enter to clear what you typed if you make a mistake.",
+      "A word that reaches the rooftops costs one heart. Lose all three and the round ends."
+    ],
+    "controls": [["Letter keys", "Type"], ["Backspace", "Delete a letter"], ["Space or Enter", "Clear the typed text"], ["Tap the game (phone)", "Opens the keyboard"]],
+    "tips": [
+      "Clear the lowest word first. A long word near the top can wait.",
+      "Keep your eyes on the words, not your fingers. The highlight shows which word you are typing.",
+      "If two words start the same way, keep typing: the one you finish is the one that clears.",
+      "Accuracy matters more than raw speed. Clearing a typo costs more time than typing carefully."
+    ],
+    "faq": [
+      ["Can I play Keystorm on a phone or tablet?", "Yes. Tap the game to bring up your keyboard. A physical keyboard is faster if you have one."],
+      ["Does Keystorm help with typing speed?", "It is practice in short bursts. Regular play builds familiarity with common letter patterns, but it is a game, not a typing course."],
+      ["Are capital letters needed?", "No. Everything is lowercase and capitals are converted automatically."],
+      ["How fast does it get?", "Words spawn more often and fall faster over time, up to a fixed maximum."]
+    ]
+  },
+  {
+    "slug": "blink-test",
+    "name": "Blink Test",
+    "genre": "Reaction time test",
+    "schema_genre": ["Casual", "Educational"],
+    "color": ["#16142a", "#2f9e44"],
+    "glyph": "ms",
+    "short": "How fast are your reflexes? Tap when the lantern turns green. Five rounds, average reaction time in milliseconds. Free online test.",
+    "lede": "Blink Test measures your reaction time. A lantern glows red, then turns green after a random delay. Tap as soon as you see green. After five rounds you get your average time in milliseconds. Lower is better.",
+    "how": [
+      "Press Play. The lantern glows red.",
+      "Wait. After a random delay of one to four seconds it turns green.",
+      "Tap the game, click, or press Space the moment it turns green.",
+      "Tap too early and that round restarts.",
+      "After five good rounds your average reaction time is shown and saved if it is your best."
+    ],
+    "controls": [["Space or Enter", "React"], ["Tap or click", "React"]],
+    "tips": [
+      "Rest a finger on the key or screen so you only need to press, not move.",
+      "Watch the center of the lantern rather than the edges.",
+      "Do not try to predict the timing. The delay is random, and guessing leads to false starts.",
+      "Results vary with your device. Screens and input hardware add their own delay."
+    ],
+    "faq": [
+      ["What is a good reaction time?", "Results for simple visual reaction tests are often quoted in the 200 to 300 millisecond range, but they vary with age, alertness and the device used. Compare against your own best rather than other people's numbers."],
+      ["Why is my time slower on a phone?", "Touch screens and display refresh rates add some delay between your tap and the browser noticing it."],
+      ["What happens if I tap too early?", "The round is marked too soon and restarts. It does not count toward your average."],
+      ["Is the best score the lowest time?", "Yes. Blink Test saves your lowest five-round average."]
+    ]
+  },
+  {
+    "slug": "ridge-solitaire",
+    "name": "Ridge Solitaire",
+    "genre": "Solitaire card game",
+    "schema_genre": ["Card game", "Puzzle"],
+    "color": ["#1f513f", "#fffaf0"],
+    "glyph": "A2",
+    "short": "Clear seven ridges of cards by playing one rank up or down from the pile. A free solitaire card game with simple rules and quick rounds.",
+    "lede": "Ridge Solitaire is a quick solitaire card game. Thirty-five cards are dealt face up in seven columns. You clear them by playing the bottom card of any column onto the pile when it is one rank higher or lower than the pile card.",
+    "how": [
+      "Press Play. A standard 52-card deck is shuffled and dealt into seven columns of five cards, with one card on the pile.",
+      "Click the bottom card of a column if it is exactly one rank above or below the pile card. Suits do not matter.",
+      "Ace is low and King is high. You cannot go from King to Ace or Ace to King.",
+      "When no column card can be played, draw from the stock to get a new pile card.",
+      "The round ends when every column card is cleared, or when the stock is empty and no moves remain."
+    ],
+    "controls": [["Click or tap a card", "Play it to the pile"], ["Click the stock", "Draw a card"], ["1 to 7", "Play that column"], ["Space or D", "Draw"]],
+    "tips": [
+      "Look for the longest run before you play. Clearing 6-7-8-7-6 across several columns beats a single quick play.",
+      "Prefer plays that uncover cards in the tallest columns. Short columns are easier to finish later.",
+      "Do not draw while you still have a play available unless the run you see from the next card is clearly longer.",
+      "Kings and Aces are dead ends, so play them when a long run is not available."
+    ],
+    "faq": [
+      ["How is Ridge Solitaire scored?", "Each cleared card is worth 10 points. Clearing all 35 adds 150 points plus 20 for every card left in the stock."],
+      ["Do suits or colors matter?", "No. Only rank matters: one higher or one lower than the pile card."],
+      ["Can every deal be won?", "No. Many deals cannot be fully cleared, so the goal is the highest score."],
+      ["Is this a traditional solitaire?", "Its rules follow a well-known public domain style of solitaire that builds up or down by one rank. The layout and art here are our own."]
+    ]
+  },
+  {
+    "slug": "hedge-guard",
+    "name": "Hedge Guard",
+    "genre": "Tower defense",
+    "schema_genre": ["Strategy", "Tower defense"],
+    "color": ["#2b4c2a", "#4dabf7"],
+    "glyph": "TD",
+    "short": "Plant and upgrade sprinkler towers along a garden path to stop waves of beetles. A free tower defense lite game in your browser.",
+    "lede": "Hedge Guard is a small tower defense game. Beetles march along a winding garden path toward your roses. You plant sprinkler towers on the grass to stop them, upgrade them between waves, and see how many waves you can hold.",
+    "how": [
+      "Press Play. You start with 120 seeds and 10 roses.",
+      "Tap a grass tile to plant a sprinkler for 50 seeds. Sprinklers spray the closest beetle in range.",
+      "Tap an existing sprinkler to upgrade it (40 seeds for level 2, 80 for level 3). Upgrades add damage, range and fire rate.",
+      "Press Start wave when you are ready. Defeated beetles drop seeds, and clearing a wave gives a bonus.",
+      "Each beetle that reaches the end eats a rose. Every fifth wave ends with a large beetle that eats three. Lose all roses and the game ends."
+    ],
+    "controls": [["Tap or click grass", "Plant a sprinkler"], ["Tap or click a sprinkler", "Upgrade it"], ["Start wave button, N or Space", "Send the next wave"], ["Arrow keys and Enter", "Move the cursor and build"]],
+    "tips": [
+      "Corners are the best spots. A sprinkler on an inside corner reaches two or three stretches of path.",
+      "Two level 1 sprinklers usually beat one level 2 early on. Upgrade once you run out of good corners.",
+      "Save around 80 seeds before every fifth wave for the large beetle.",
+      "Sprinklers target the beetle furthest along the path, so place your strongest tower near the end."
+    ],
+    "faq": [
+      ["How do you score in Hedge Guard?", "10 points per beetle, 100 per large beetle, and 50 for every wave cleared."],
+      ["Does Hedge Guard ever end?", "Waves keep coming with more and tougher beetles until your roses run out."],
+      ["Can I play on a phone?", "Yes. Tap tiles to build and tap the Start wave button. Landscape gives a larger board."],
+      ["Can I sell a tower?", "Not in this version. Plan placements before you spend."]
+    ]
+  }
+]
