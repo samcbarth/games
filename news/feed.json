@@ -1,0 +1,122 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Lunchbreak Dispatch (Lunchbreak Arcade)",
+  "home_page_url": "https://games.samcbarth.com/news/",
+  "feed_url": "https://games.samcbarth.com/news/feed.json",
+  "description": "Short, sourced write-ups on the gaming industry, indie games and browser games, with links to every original source.",
+  "language": "en",
+  "icon": "https://games.samcbarth.com/assets/img/og-default.webp",
+  "authors": [
+    {
+      "name": "Sam Barth",
+      "url": "https://samcbarth.com"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://games.samcbarth.com/news/sag-aftra-pre-funding-pitch-agreement-games/",
+      "url": "https://games.samcbarth.com/news/sag-aftra-pre-funding-pitch-agreement-games/",
+      "title": "SAG-AFTRA adds a pitch agreement for indie game demos",
+      "summary": "A new union agreement lets small developers hire SAG-AFTRA performers for demos and vertical slices made to raise funding, with negotiable pitch fees.",
+      "content_text": "SAG-AFTRA has introduced a Pre-Funding Pitch Interactive Media Agreement that lets small game developers hire union voice and motion performers for demos, trailers and vertical slices shown to investors, Voice Over Herald reported on November 7, 2026. The union announced it on November 5.\n\nPer the report, it applies to projects with no more than 30% of their initial production funding secured. The pitch fee is negotiated between performer and producer with no minimum, though health and retirement contributions are still owed. Once funding passes 30% of the planned budget, or if a performer's pitch material is used in the finished game, the union's independent interactive terms apply, and earlier pay can be credited against scale.\n\nWhy it matters: small teams pitching a game have often had to choose between non-union talent and costs they could not cover before funding. This gives them a middle path.\n\nSource: Voice Over Herald https://www.voiceoverherald.com/sag-aftra-pre-funding-pitch-agreement-game-demos-voice-actors/",
+      "external_url": "https://www.voiceoverherald.com/sag-aftra-pre-funding-pitch-agreement-game-demos-voice-actors/",
+      "image": "https://games.samcbarth.com/assets/img/news-sag-aftra-pre-funding-pitch-agreement-games.webp",
+      "date_published": "2026-11-07T12:00:00Z",
+      "tags": [
+        "indie",
+        "industry",
+        "voice acting"
+      ]
+    },
+    {
+      "id": "https://games.samcbarth.com/news/nintendo-first-half-profit-up-sales-down/",
+      "url": "https://games.samcbarth.com/news/nintendo-first-half-profit-up-sales-down/",
+      "title": "Nintendo reports higher first-half profit on lower sales",
+      "summary": "Nintendo's April to September net profit rose 11% to 220.9 billion yen while sales fell 12% to 966 billion yen.",
+      "content_text": "Nintendo reported an 11% rise in net profit for April through September 2026, to 220.9 billion yen (about $1.4 billion), up from nearly 199 billion yen a year earlier, the Associated Press reported on November 5. Sales for the six months fell 12% to 966 billion yen.\n\nAccording to the report, Star Fox and Splatoon Raiders sold well in the period, Mario Kart World stayed in demand, and digital sales kept growing. Nintendo kept its full-year forecast unchanged at 310 billion yen in profit on 2 trillion yen in sales, and cited a chip shortage and rising component prices tied to demand from artificial intelligence.\n\nWhy it matters: rising component costs are a pressure point on the hardware side of gaming this year, which is one reason instant-play formats like browser games keep their audience.\n\nSource: Associated Press https://apnews.com/article/nintendo-earnings-japan-games-mario-profit-0623978a01041bf7dc5625980a5a2c0d",
+      "external_url": "https://apnews.com/article/nintendo-earnings-japan-games-mario-profit-0623978a01041bf7dc5625980a5a2c0d",
+      "image": "https://games.samcbarth.com/assets/img/news-nintendo-first-half-profit-up-sales-down.webp",
+      "date_published": "2026-11-05T12:00:00Z",
+      "tags": [
+        "industry",
+        "nintendo",
+        "earnings"
+      ]
+    },
+    {
+      "id": "https://games.samcbarth.com/news/xbox-indie-selects-november-2026/",
+      "url": "https://games.samcbarth.com/news/xbox-indie-selects-november-2026/",
+      "title": "Xbox names six Indie Selects for November 2026",
+      "summary": "The ID@Xbox team picked six indie games for November, including Graveyard Keeper 2, Warhammer 40,000: Boltgun 2 and Ratatan.",
+      "content_text": "Xbox Wire published its Indie Selects list for November 2026 on November 4. Indie Selects is a set of indie games picked by the ID@Xbox team and collected in a hub in the Xbox Store.\n\nThis month's six picks are Silver Pines, Graveyard Keeper 2, Warhammer 40,000: Boltgun 2, Colorbound, Ratatan and Tenebris Somnia. Xbox Wire marks Colorbound, Ratatan and Tenebris Somnia as Xbox Play Anywhere titles, meaning one purchase covers both Xbox console and Windows PC.\n\nWhy it matters: curated store lists like this are one of the few ways smaller games get front-page placement on a console storefront.\n\nSource: Xbox Wire https://news.xbox.com/en-us/2026/11/04/indie-selects-november/",
+      "external_url": "https://news.xbox.com/en-us/2026/11/04/indie-selects-november/",
+      "image": "https://games.samcbarth.com/assets/img/news-xbox-indie-selects-november-2026.webp",
+      "date_published": "2026-11-04T12:00:00Z",
+      "tags": [
+        "indie",
+        "xbox",
+        "releases"
+      ]
+    },
+    {
+      "id": "https://games.samcbarth.com/news/takara-tomy-enjoyn-games-indie-label/",
+      "url": "https://games.samcbarth.com/news/takara-tomy-enjoyn-games-indie-label/",
+      "title": "Toy maker Takara Tomy launches Enjoyn Games, an indie publishing label",
+      "summary": "Takara Tomy has entered game publishing with Enjoyn Games and three party titles for Steam, starting with a burger-stacking social deduction game.",
+      "content_text": "Japanese toy company Takara Tomy has launched an indie game publishing brand called Enjoyn Games, Automaton reported on November 4, 2026. The label announced three games for Steam.\n\nThe debut title, Stack & Sus, is a physics-based social deduction game for 3 to 6 players who work together to stack a giant burger while hidden Spies try to sabotage it. The other two are Little Cheese Works, a voice-chat co-op game about mice working at a cheese company without alerting a cat, and Sloppy Forgeries, a painting party game where players recreate classic artworks with limited tools and are scored pixel by pixel.\n\nWhy it matters: a large toy company putting its name behind small party games is a sign that indie publishing still looks attractive to companies outside the games business.\n\nSource: Automaton https://automaton-media.com/en/news/japanese-toy-giant-takara-tomy-announces-its-own-indie-game-publishing-label-enjoyn-games-debut-title-is-a-burger-stacking-social-deduction-game/",
+      "external_url": "https://automaton-media.com/en/news/japanese-toy-giant-takara-tomy-announces-its-own-indie-game-publishing-label-enjoyn-games-debut-title-is-a-burger-stacking-social-deduction-game/",
+      "image": "https://games.samcbarth.com/assets/img/news-takara-tomy-enjoyn-games-indie-label.webp",
+      "date_published": "2026-11-04T12:00:00Z",
+      "tags": [
+        "indie",
+        "publishing",
+        "party games"
+      ]
+    },
+    {
+      "id": "https://games.samcbarth.com/news/buy-a-quebec-video-game-day-november-14/",
+      "url": "https://games.samcbarth.com/news/buy-a-quebec-video-game-day-november-14/",
+      "title": "Quebec holds its first Buy a Quebec Video Game Day on November 14",
+      "summary": "La Guilde du jeu video du Quebec is promoting games made in the province with a one-day event and a portal listing more than 400 titles.",
+      "content_text": "Saturday, November 14, 2026 is the first Buy a Quebec Video Game Day, announced on November 4 by La Guilde du jeu video du Quebec, the province's video game industry guild, working with Rouge marketing.\n\nThe event asks players to discover and buy games made in Quebec. Alongside it, the guild launched a portal called Jeux video du Quebec that lists more than 400 games developed in the province.\n\nWhy it matters: regional buy-local days are a low-cost way to surface smaller studios before the holiday rush, and the portal stays useful after the day itself.\n\nSource: CNW press release via Yahoo Finance https://finance.yahoo.com/news/first-ever-buy-qu-bec-132200769.html",
+      "external_url": "https://finance.yahoo.com/news/first-ever-buy-qu-bec-132200769.html",
+      "image": "https://games.samcbarth.com/assets/img/news-buy-a-quebec-video-game-day-november-14.webp",
+      "date_published": "2026-11-04T12:00:00Z",
+      "tags": [
+        "indie",
+        "events",
+        "canada"
+      ]
+    },
+    {
+      "id": "https://games.samcbarth.com/news/steam-wishlists-wheel-make-it-15-players/",
+      "url": "https://games.samcbarth.com/news/steam-wishlists-wheel-make-it-15-players/",
+      "title": "Indie publisher says 11,000 wishlists turned into a 15-player peak",
+      "summary": "Publisher 2 Left Thumbs blamed a Steam approval delay and a flood of low-effort AI games after Wheel Make It peaked at 15 concurrent players.",
+      "content_text": "Indie publisher 2 Left Thumbs said its game Wheel Make It reached a peak of only 15 concurrent players on Steam after launch, despite more than 11,000 wishlists, according to a November 3, 2026 report from PC Guide. The publisher pointed to a delay in Steam's approval process and what it called a wave of AI-made games crowding the store.\n\nWhy it matters: wishlists are often treated as the main signal of how a Steam launch will go. This is one more public example of that signal falling short, and of small teams struggling for visibility when thousands of games release each week.\n\nFor indie developers, the takeaway is not new but worth repeating: plan launch timing with store review times in mind, and keep building an audience outside the store page.\n\nSource: PC Guide https://www.pcguide.com/news/indie-game-publisher-blames-steam-approval-delay-and-tidal-wave-of-ai-slop-after-game-peaks-at-just-15-players/",
+      "external_url": "https://www.pcguide.com/news/indie-game-publisher-blames-steam-approval-delay-and-tidal-wave-of-ai-slop-after-game-peaks-at-just-15-players/",
+      "image": "https://games.samcbarth.com/assets/img/news-steam-wishlists-wheel-make-it-15-players.webp",
+      "date_published": "2026-11-03T12:00:00Z",
+      "tags": [
+        "indie",
+        "steam",
+        "industry"
+      ]
+    },
+    {
+      "id": "https://games.samcbarth.com/news/xsolla-acquires-gamepix-browser-games/",
+      "url": "https://games.samcbarth.com/news/xsolla-acquires-gamepix-browser-games/",
+      "title": "Xsolla buys GamePix, a browser games platform with 10,000+ titles",
+      "summary": "Commerce company Xsolla has acquired GamePix, which publishes and distributes web games and ports PC and mobile titles to the browser.",
+      "content_text": "Xsolla, a company that sells payment and commerce tools to game developers, announced on October 21, 2026 that it has acquired GamePix, a platform that publishes and distributes browser games. The announcement says GamePix brings a catalog of more than 10,000 web titles and a community of over 4,000 developers. No price was disclosed.\n\nGamePix was founded in 2013, when web games still ran on Flash, and has since moved through HTML5, WebGL and WebGPU. Xsolla says GamePix's porting technology converts Unity and C++ games for PC and mobile into web builds up to 90% smaller in load size. The release adds that GamePix has been part of Xsolla since August 2026.\n\nWhy it matters: browser games are getting more attention from bigger companies again. For players, the pitch is the same one this site is built on: no download, nothing to install, play in a tab.\n\nSource: Business Wire (Xsolla press release) https://www.businesswire.com/news/home/20261021024495/en/Xsolla-Acquires-GamePix-to-Build-a-Complete-Platform-for-Web-and-AI-Created-Video-Games",
+      "external_url": "https://www.businesswire.com/news/home/20261021024495/en/Xsolla-Acquires-GamePix-to-Build-a-Complete-Platform-for-Web-and-AI-Created-Video-Games",
+      "image": "https://games.samcbarth.com/assets/img/news-xsolla-acquires-gamepix-browser-games.webp",
+      "date_published": "2026-10-21T12:00:00Z",
+      "tags": [
+        "browser games",
+        "industry",
+        "acquisitions"
+      ]
+    }
+  ]
+}

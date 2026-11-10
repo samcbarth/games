@@ -1,0 +1,32 @@
+# Lunchbreak Arcade
+
+> Free original browser games you can finish on a lunch break. 10 original HTML5 games that run in any browser, plus Lunchbreak Dispatch, short sourced gaming news.
+
+## Games
+- [Tangleword](https://games.samcbarth.com/games/tangleword/): Unscramble jumbled words against a 75 second clock. A free word puzzle game you can play in your browser on phone or desktop.
+- [Tide Pool Swap](https://games.samcbarth.com/games/tide-pool-swap/): Swap shells, pearls and starfish to line up three or more in this free match-three puzzle. 25 moves, chain reactions, no download.
+- [Rooftop Dash](https://games.samcbarth.com/games/rooftop-dash/): Run across city rooftops at sunset, jump the gaps and dodge vents in this free one-button endless runner for phone and desktop.
+- [Crate Stack](https://games.samcbarth.com/games/crate-stack/): Drag crate shapes onto an 8 by 8 warehouse floor and clear full rows and columns. A free block puzzle with no timer.
+- [Glowworm](https://games.samcbarth.com/games/glowworm/): Steer a glowing worm through a night garden, eat dewdrops and grow longer without biting your own tail. Free arcade game.
+- [Sinkhole Sweep](https://games.samcbarth.com/games/sinkhole-sweep/): Survey a 9 by 9 meadow and mark the 10 hidden sinkholes using number clues. A free logic puzzle in the minesweeper family.
+- [Keystorm](https://games.samcbarth.com/games/keystorm/): Type falling words before they reach the town. A free typing game that gets faster as you go, for keyboards and phones.
+- [Blink Test](https://games.samcbarth.com/games/blink-test/): How fast are your reflexes? Tap when the lantern turns green. Five rounds, average reaction time in milliseconds. Free online test.
+- [Ridge Solitaire](https://games.samcbarth.com/games/ridge-solitaire/): Clear seven ridges of cards by playing one rank up or down from the pile. A free solitaire card game with simple rules and quick rounds.
+- [Hedge Guard](https://games.samcbarth.com/games/hedge-guard/): Plant and upgrade sprinkler towers along a garden path to stop waves of beetles. A free tower defense lite game in your browser.
+
+## News
+- [Lunchbreak Dispatch](https://games.samcbarth.com/news/): gaming industry, indie and browser game news
+- [JSON Feed](https://games.samcbarth.com/news/feed.json)
+- [SAG-AFTRA adds a pitch agreement for indie game demos](https://games.samcbarth.com/news/sag-aftra-pre-funding-pitch-agreement-games/)
+- [Nintendo reports higher first-half profit on lower sales](https://games.samcbarth.com/news/nintendo-first-half-profit-up-sales-down/)
+- [Xbox names six Indie Selects for November 2026](https://games.samcbarth.com/news/xbox-indie-selects-november-2026/)
+- [Toy maker Takara Tomy launches Enjoyn Games, an indie publishing label](https://games.samcbarth.com/news/takara-tomy-enjoyn-games-indie-label/)
+- [Quebec holds its first Buy a Quebec Video Game Day on November 14](https://games.samcbarth.com/news/buy-a-quebec-video-game-day-november-14/)
+- [Indie publisher says 11,000 wishlists turned into a 15-player peak](https://games.samcbarth.com/news/steam-wishlists-wheel-make-it-15-players/)
+- [Xsolla buys GamePix, a browser games platform with 10,000+ titles](https://games.samcbarth.com/news/xsolla-acquires-gamepix-browser-games/)
+
+## About
+- [About](https://games.samcbarth.com/about/)
+- [Contact](https://games.samcbarth.com/contact/)
+- [Privacy](https://games.samcbarth.com/privacy/)
+- [Terms](https://games.samcbarth.com/terms/)
