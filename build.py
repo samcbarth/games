@@ -43,7 +43,11 @@ GTM = """<script async src="https://www.googletagmanager.com/gtag/js?id=G-VBSEWX
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-VBSEWX39L4');
-</script>"""
+</script>
+<!-- monetag -->
+<script src="https://5gvci.com/act/files/tag.min.js?z=12242935" data-cfasync="false" async></script>
+<script>(function(s){s.dataset.zone='12242936',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+<script>(function(s){s.dataset.zone='12242937',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>"""
 # Extra on-screen controls under specific games
 EXTRA_CONTROLS = {
     "glowworm": '<div class="controls" aria-label="Direction buttons"><button type="button" data-dir="left" aria-label="Left">&larr;</button>'
